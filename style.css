@@ -15,6 +15,7 @@ body {
   margin: 56px 0;
 }
 @media (min-width: 576px) { #main { margin: 64px; }}
+@media (min-width: 768px) { #main { margin: 72px; }}
 
 
 #title, #description {
@@ -39,6 +40,7 @@ p, #survey-form {
   color: #333333;
 }
 @media (min-width: 576px) { p, #survey-form { font-size: 16px; }}
+@media (min-width: 768px) { p, #survey-form { font-size: 18px; }}
 
 #survey-form input::placeholder,
 #survey-form textarea::placeholder,
@@ -46,14 +48,21 @@ input[type="submit"], select {
   font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 576px) {
   #survey-form input::placeholder,
   #survey-form textarea::placeholder,
   input[type="submit"], select {
-    font-size: 16px;
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) {
+  #survey-form input::placeholder,
+  #survey-form textarea::placeholder,
+  input[type="submit"], select {
+    font-size: 14px;
   }
 }
 
@@ -68,8 +77,15 @@ input[type="submit"], select {
 @media (min-width: 576px) {
   #survey-form {
     max-width: 540px;
-    padding: 56px 48px; 
+    padding: 56px; 
     margin-top: 64px;
+  }
+}
+@media (min-width: 768px) {
+  #survey-form {
+    max-width: 720px;
+    padding: 76px; 
+    margin-top: 72px;
   }
 }
 
@@ -92,6 +108,7 @@ textarea {
   resize: none;
 }
 @media (min-width: 576px) { textarea { height: 120px; }}
+@media (min-width: 768px) { textarea { height: 160px; }}
 
 @supports(-webkit-appearance: none) or (-moz-appearance: none) {
   input[type="radio"] {
@@ -167,7 +184,6 @@ input[type="submit"] {
   width: 240px;
   height: 48px;
   background: #333333;
-  border: none;
   border-radius: 5px;
   margin: 0 auto;
   color: #F2F2F2;
